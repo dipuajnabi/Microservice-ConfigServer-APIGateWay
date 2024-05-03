@@ -1,0 +1,11 @@
+package com.microservice.userservice.repository;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.microservice.userservice.entity.user;
+
+public interface UserRepository extends JpaRepository<User, ID> {
+	
+	User
+
+}

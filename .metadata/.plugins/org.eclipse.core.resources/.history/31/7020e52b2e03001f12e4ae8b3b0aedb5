@@ -1,0 +1,10 @@
+package com.microservice.userservice.entity;
+
+public class Rating {
+	
+	private String id;
+	private String name;
+	private String location;
+	private String about;
+
+}

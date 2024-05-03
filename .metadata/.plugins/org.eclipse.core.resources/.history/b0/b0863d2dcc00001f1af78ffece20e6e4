@@ -1,0 +1,13 @@
+package com.microservice.userservice.service;
+
+import com.microservice.userservice.entity.User;
+
+public interface UserService {
+	
+	public User createUser(User user);
+	
+	public User getUser(String userId);
+	
+	public List<User> getAllUser();
+
+}

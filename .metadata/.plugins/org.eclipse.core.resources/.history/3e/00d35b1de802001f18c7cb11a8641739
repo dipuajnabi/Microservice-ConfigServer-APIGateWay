@@ -1,0 +1,5 @@
+package com.microservice.ratingservice.repository;
+
+public interface RatingRepository {
+
+}

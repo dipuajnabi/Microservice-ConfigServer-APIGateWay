@@ -1,0 +1,36 @@
+package com.microservice.hotelservice.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.microservice.hotelservice.entity.Hotel;
+import com.microservice.hotelservice.exception.ResouceNotFoundException;
+import com.microservice.hotelservice.repository.HotelRepository;
+import com.microservice.hotelservice.service.HotelService;
+
+public class HotelServiceImpl implements HotelService {
+	
+	@Autowired
+	HotelRepository hotelRepository;
+
+	@Override
+	public Hotel saveHotel(Hotel hotel) {
+		return hotelRepository.save(hotel);
+	}
+
+	@Override
+	public Hotel getHotel(String hotelId) {
+		return hotelRepository.findById(hotelId)
+				.orElseThrow(() -> new ResouceNotFoundException("Hotel not found with given hotelId"));
+		
+	}
+	
+	@Override
+	public List<Hotel> getAllHotels() {
+		return hotelRepository.findAll();
+	}
+	
+
+}

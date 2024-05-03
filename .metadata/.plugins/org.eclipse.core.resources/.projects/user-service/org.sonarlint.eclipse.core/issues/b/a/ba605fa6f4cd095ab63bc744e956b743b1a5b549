@@ -1,0 +1,9 @@
+
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8ëÇ¿¤ò1b 0132ec8cee01c5dd244e1a60fe6448a1h
+h
+java:S1172-"-Remove this unused method parameter "userId".8×ßè¤ò1b 8e44f0089b076e18a718eb9ca3d94674h
+|
+java:S3457."AFormat specifiers should be used instead of string concatenation.8×ßè¤ò1b dff63cfed954ef95731c78fb544b76ebh
+”
+java:S22935"YReplace the type specification in this constructor call with the diamond operator ("<>").8Œ×í¤ò1b 4c2de11c9da644276f9f83237c9fa22ah

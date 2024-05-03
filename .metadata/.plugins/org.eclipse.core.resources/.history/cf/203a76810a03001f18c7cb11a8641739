@@ -1,0 +1,27 @@
+
+server:
+  port: 8081
+  
+spring:
+  application:
+    name: user-service
+   
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hotel-management
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://hocalhost:8761/eureka
+      
+    

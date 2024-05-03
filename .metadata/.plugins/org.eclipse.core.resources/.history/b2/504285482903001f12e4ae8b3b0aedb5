@@ -1,0 +1,22 @@
+server:
+  port: 8082
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hotel-management
+    username: postgres
+    password: postgres
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:5432/eureka/

@@ -1,0 +1,5 @@
+package com.microservice.ratingservice.entity;
+
+public class Rating {
+
+}
